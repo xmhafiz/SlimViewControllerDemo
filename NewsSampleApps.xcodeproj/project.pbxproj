@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		86974DF7262AC11B00B3815C /* DemoProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86974DF6262AC11B00B3815C /* DemoProfileStore.swift */; };
+		86974DF7262AC11B00B3815C /* DemoProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86974DF6262AC11B00B3815C /* DemoProfile.swift */; };
 		86D95764262A8D4F00C37A0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D95763262A8D4F00C37A0A /* AppDelegate.swift */; };
 		86D95766262A8D4F00C37A0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D95765262A8D4F00C37A0A /* SceneDelegate.swift */; };
 		86D95768262A8D4F00C37A0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D95767262A8D4F00C37A0A /* ViewController.swift */; };
@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		86974DF6262AC11B00B3815C /* DemoProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoProfileStore.swift; sourceTree = "<group>"; };
+		86974DF6262AC11B00B3815C /* DemoProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoProfile.swift; sourceTree = "<group>"; };
 		86D95760262A8D4F00C37A0A /* NewsSampleApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsSampleApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D95763262A8D4F00C37A0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86D95765262A8D4F00C37A0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 				86D9577A262A90BB00C37A0A /* VCs */,
 				86D95779262A90AF00C37A0A /* ViewComponents */,
 				86D95791262AB26200C37A0A /* UIViewExtension.swift */,
-				86974DF6262AC11B00B3815C /* DemoProfileStore.swift */,
+				86974DF6262AC11B00B3815C /* DemoProfile.swift */,
 				86D9576C262A8D5300C37A0A /* Assets.xcassets */,
 				86D9576E262A8D5300C37A0A /* LaunchScreen.storyboard */,
 				86D95771262A8D5300C37A0A /* Info.plist */,
@@ -208,7 +208,7 @@
 				86D95768262A8D4F00C37A0A /* ViewController.swift in Sources */,
 				86D95764262A8D4F00C37A0A /* AppDelegate.swift in Sources */,
 				86D95788262A997A00C37A0A /* StatsView.swift in Sources */,
-				86974DF7262AC11B00B3815C /* DemoProfileStore.swift in Sources */,
+				86974DF7262AC11B00B3815C /* DemoProfile.swift in Sources */,
 				86D95766262A8D4F00C37A0A /* SceneDelegate.swift in Sources */,
 				86D95785262A96D600C37A0A /* HeaderView.swift in Sources */,
 				86D95797262AB59D00C37A0A /* PostView.swift in Sources */,

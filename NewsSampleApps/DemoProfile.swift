@@ -1,5 +1,5 @@
 //
-//  DemoProfileStore.swift
+//  DemoProfile.swift
 //  NewsSampleApps
 //
 //  Created by Hafiz on 17/04/2021.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DemoProfileStore {
+struct DemoProfile {
     var name: String = "John Doe"
     var role: String = "iOS Engineer, Trainer and Swift lover"
     var avatarImageName = "profileJohn"

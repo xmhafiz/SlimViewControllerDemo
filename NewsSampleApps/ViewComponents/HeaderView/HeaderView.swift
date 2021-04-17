@@ -38,7 +38,7 @@ class HeaderView: UIView {
         profileImageView.layer.cornerRadius = profileImageView.frame.height/2
     }
     
-    func update(profile: DemoProfileStore) {
+    func update(profile: DemoProfile) {
         profileImageView.image = UIImage(named: profile.avatarImageName)
         titleLabel.text = profile.name
         subtitleLabel.text = profile.role

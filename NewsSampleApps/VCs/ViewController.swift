@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     }
     
     func setupData() {
-        let profile = DemoProfileStore()
+        let profile = DemoProfile()
         // update header
         headerView.update(profile: profile)
         // update text
