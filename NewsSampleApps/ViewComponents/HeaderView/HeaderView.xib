@@ -21,11 +21,11 @@
             <rect key="frame" x="0.0" y="0.0" width="520" height="235"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="o94-DM-6Q6">
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="o94-DM-6Q6">
                     <rect key="frame" x="24" y="60" width="472" height="125"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cU8-vQ-0Xq">
-                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                            <rect key="frame" x="0.0" y="12.5" width="100" height="100"/>
                             <color key="backgroundColor" systemColor="systemGray5Color"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="100" id="JHg-nx-cs1"/>
@@ -33,7 +33,7 @@
                             </constraints>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WHr-8y-ZfZ">
-                            <rect key="frame" x="116" y="0.0" width="356" height="86.5"/>
+                            <rect key="frame" x="116" y="19.5" width="356" height="86.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bs-bg-lmx">
                                     <rect key="frame" x="0.0" y="0.0" width="107" height="21.5"/>

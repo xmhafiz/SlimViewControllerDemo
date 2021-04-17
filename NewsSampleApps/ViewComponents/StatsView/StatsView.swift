@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SummaryView: UIView {
+class StatsView: UIView {
     @IBOutlet weak var viewContainerView: UIView!
     @IBOutlet weak var readContainerView: UIView!
     @IBOutlet weak var totalViewValueLabel: UILabel!
@@ -24,7 +24,7 @@ class SummaryView: UIView {
     }
     
     func commonInit() {
-        let xibFileName = "SummaryView" // xib extension not included
+        let xibFileName = "StatsView" // xib extension not included
         let view = Bundle.main.loadNibNamed(xibFileName, owner: self, options: nil)![0] as! UIView
         self.addSubview(view)
         view.frame = self.bounds
@@ -36,5 +36,10 @@ class SummaryView: UIView {
         viewContainerView.layer.cornerRadius = 10
         readContainerView.clipsToBounds = true
         readContainerView.layer.cornerRadius = 10
+    }
+    
+    func updateContent(profile: DemoProfileStore) {
+        totalViewValueLabel.text = profile.totalViews
+        totalReadValueLabel.text = profile.totalReads
     }
 }
