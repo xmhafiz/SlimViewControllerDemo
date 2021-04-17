@@ -34,6 +34,9 @@ class ViewController: UIViewController {
         scrollView.pinToEdges(inView: view)
         mainStackView.pinToEdges(inView: scrollView)
         mainStackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
+        
+        // setup delegate
+        headerView.delegate = self
     }
     
     func setupData() {
@@ -44,7 +47,11 @@ class ViewController: UIViewController {
         postView.updatePost(title: profile.postTitle, description: profile.postDescription)
         // update summary
         summaryView.updateContent(profile: profile)
-        
     }
 }
 
+extension ViewController: HeaderViewDelegate {
+    func didTapEditButton() {
+        print("Edit button is tapped!")
+    }
+}

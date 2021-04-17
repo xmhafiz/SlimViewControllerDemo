@@ -1,5 +1,5 @@
 //
-//  SummaryView.swift
+//  StatsView.swift
 //  NewsSampleApps
 //
 //  Created by Hafiz on 17/04/2021.
@@ -38,7 +38,7 @@ class StatsView: UIView {
         readContainerView.layer.cornerRadius = 10
     }
     
-    func updateContent(profile: DemoProfileStore) {
+    func updateContent(profile: DemoProfile) {
         totalViewValueLabel.text = profile.totalViews
         totalReadValueLabel.text = profile.totalReads
     }

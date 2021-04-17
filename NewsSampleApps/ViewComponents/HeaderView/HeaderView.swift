@@ -7,11 +7,17 @@
 
 import UIKit
 
+protocol HeaderViewDelegate {
+    func didTapEditButton()
+}
+
 class HeaderView: UIView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var editButton: UIButton!
+    
+    var delegate: HeaderViewDelegate?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -36,11 +42,18 @@ class HeaderView: UIView {
         editButton.layer.cornerRadius = editButton.frame.height/2
         profileImageView.clipsToBounds = true
         profileImageView.layer.cornerRadius = profileImageView.frame.height/2
+        
+        // actions
+        editButton.addTarget(self, action: #selector(self.handleEditAction), for: .touchUpInside)
     }
     
     func update(profile: DemoProfile) {
         profileImageView.image = UIImage(named: profile.avatarImageName)
         titleLabel.text = profile.name
         subtitleLabel.text = profile.role
+    }
+    
+    @objc func handleEditAction() {
+        delegate?.didTapEditButton()
     }
 }
